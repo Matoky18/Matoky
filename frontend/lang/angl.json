@@ -1,0 +1,30 @@
+{
+
+    "header" : {
+        "home": "Home",
+        "skills": "Skill",
+        "project":"Project",
+        "contact":"Contact",
+        "hire":"Hire me",
+        "lang":"Fr"
+    },
+    "home" : {
+
+        "work":"Developper Web",
+        "cv":"Download CV"
+        
+    },
+    "Skill" : {
+        "titre":"Skills"
+        
+    },
+    "project" : {
+        "titre":"What I've built"
+
+    },
+    "contact" : {
+        "titre":"Contact",
+        "phrase":"Questions? Let's talk.",
+        "send":"Send"
+    }
+}

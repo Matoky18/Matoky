@@ -1,0 +1,31 @@
+{
+
+    "header" : {
+        "home": "Accueil",
+        "skills": "Compétence",
+        "project":"Projet",
+        "contact":"Contact",
+        "hire":"Engagez-moi",
+        "lang":"Ang"
+    },
+    "home" : {
+
+        "work":"Développeur Web",
+        "cv":"Télécharger CV"
+        
+    },
+    "Skill" : {
+        "titre":"Compétence"
+        
+    },
+    "project" : {
+        "titre":"Mes projets"
+
+    },
+    "contact" : {
+        "titre":"Contact",
+        "phrase":"Des questions ? Parlons-en.",
+        "send":"Envoyer"
+
+    }
+}
