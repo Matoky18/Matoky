@@ -10,8 +10,13 @@ const lang = document.querySelector('.lang');
 const iconreseau = document.querySelector('.iconhome');
 const bouton = document.querySelector('.bouton');
 const hireme = document.querySelector('.hirenavbouton');
+const itemProject = document.querySelector(".item-project");
 
 
+
+itemProject.addEventListener("hover",()=>{
+    
+})
 
 
 function supprimerajouter() {

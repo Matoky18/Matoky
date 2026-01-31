@@ -1,6 +1,5 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Cookie&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');          
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
@@ -23,18 +22,20 @@ body {
     font-family: "Poppins", sans-serif;
     list-style: none;
     background: rgb(238,235,248);
-     
+     overflow-x: hidden ;
+    
 }
 
-
+html {
+     scroll-behavior: smooth;
+}
 
 a {
     text-decoration: none;
     text-underline-offset: none;
     cursor: pointer;
+    
 }
-
-
 
 
 
@@ -330,6 +331,8 @@ img {
     height: 100vh;
     
 }
+
+
 
 /* fin project */
 
@@ -644,7 +647,7 @@ img {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin-inline: 25%;
+        /* margin-inline: 25%; */
         margin-top: 30vh;      
         font-size: clamp(15px,1vw,20px);
         /* font-size: 20px; */        
@@ -763,9 +766,68 @@ img {
         align-items: center;
         height: 100vh;
         width: 100%;
+        gap:5vh;
     }
 
-   
+    .hero-project {
+        display: flex;
+        justify-content: center;
+        gap: 50px;
+        width: 100%;
+    }
+
+   .item-project {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px ;
+    max-width: 40vw;
+    height: 50vh;
+    background: #ffffffde;
+    border: 1px solid #570bb435;
+    border-radius: 6px;
+    }
+
+    .image1 , .image2 {
+        border-radius: 3px;
+        width: 95%;
+        height: 95%;
+        
+    }
+
+    .image1 {
+
+        background-image: url("./image/ag\ digitale.PNG");
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .image2 {
+
+        background-image: url("./image/boutique\ alphaFitness.PNG");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: right;
+    }
+
+    .container.project .titre {
+        font-family: "cookie";
+        text-align: center;
+        font-size: 30px;
+        padding-inline: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        background: rgba(255, 255, 255, 0.452);
+        backdrop-filter: blur(2px);
+        box-sizing: border-box;
+    }
+    .container.project .titre {
+        cursor: pointer;
+        
+    }
+
 
     /* fin projetc */
 
@@ -828,11 +890,17 @@ img {
     box-shadow: 3px 3px 7px 1px rgba(0, 0, 0, 0.25),-5px -3px 17px 4px rgb(255, 253, 253);
 }
 
-.send:hover {
+.send:active {
     
     cursor: pointer;
     color:  rgba(172,130,166, 100);
     box-shadow: inset 3px 3px 7px 1px rgba(0, 0, 0, 0.25), inset -5px -3px 17px 4px white;
+}
+.send:hover {
+    
+    cursor: pointer;
+    color:  rgba(172,130,166, 100);
+    background: #ffffff67;
 }
 
 .iconetchamp {
