@@ -780,13 +780,27 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 400px ;
+    flex-direction: column;
+    width: 500px ;
     max-width: 40vw;
     height: 50vh;
     background: #ffffffde;
     border: 1px solid #570bb435;
     border-radius: 6px;
     }
+
+    .item-project:hover {
+        cursor: pointer;
+    }
+
+    
+
+    /* .item-project details{
+        display: none;
+        display: flex;
+        flex-direction: column;
+        height: 50%;
+    } */
 
     .image1 , .image2 {
         border-radius: 3px;
@@ -809,7 +823,7 @@ img {
         background-position: right;
     }
 
-    .container.project .titre {
+    .container.project .titre-projet {
         font-family: "cookie";
         text-align: center;
         font-size: 30px;
@@ -822,12 +836,15 @@ img {
         background: rgba(255, 255, 255, 0.452);
         backdrop-filter: blur(2px);
         box-sizing: border-box;
-    }
-    .container.project .titre {
-        cursor: pointer;
-        
+        transition: 0.5s;
     }
 
+    .container.project .titre-projet.hovering {
+        display: none;
+        transition: 0.5s;
+    
+    }
+   
 
     /* fin projetc */
 

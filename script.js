@@ -10,13 +10,41 @@ const lang = document.querySelector('.lang');
 const iconreseau = document.querySelector('.iconhome');
 const bouton = document.querySelector('.bouton');
 const hireme = document.querySelector('.hirenavbouton');
-const itemProject = document.querySelector(".item-project");
+const itemProject = document.querySelectorAll(".item-project");
 
 
 
-itemProject.addEventListener("hover",()=>{
-    
-})
+itemProject.forEach(item=>
+
+    {
+
+        const titre = item.querySelector(".titre-projet");
+
+            item.addEventListener("mouseenter",()=>{
+            
+            titre.classList.add("hovering")
+       
+
+        })
+
+
+        item.addEventListener("mouseleave",()=>{
+           
+            titre.classList.remove("hovering")
+
+        })
+
+        item.addEventListener("click",()=>{
+            
+            if(item.dataset.link) {
+                window.open(item.dataset.link, "_blank")
+            }
+
+        })
+
+    }
+
+)
 
 
 function supprimerajouter() {
