@@ -738,23 +738,34 @@ img {
     .skill{
         display: flex;
         height: 100vh;
+        margin-bottom: 10vh;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         /* background: orange; */
     }
 
+    .hero-skill {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        /* height: 100%; */
+        max-width: 70%;
+        gap: 150px;
+        /* background: gold; */
+    }
 
     .icon {
         display: flex;
         justify-content: center;
         align-items: center;
         /* height: 50%; */
-        width: 70%;
+        width: 100%;
         flex-wrap: wrap;
    
        
-        background: #79a57c;
+        /* background: #79a57c; */
     }
 
     .icon>div {
@@ -763,7 +774,7 @@ img {
         align-items: center;
         margin-inline: 50px;
         transition: all ease 0.5s;
-        
+        margin-block: 50px;
     }
 
     .icon > div:hover svg  {
