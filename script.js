@@ -1,5 +1,6 @@
 const boutonhamburger = document.querySelector('.bx-menu-alt-right');
 const menu = document.querySelector('nav');
+const menuMobile = document.querySelector('.menu-mobile')
 const lien = document.querySelectorAll('nav a'); //selectionner tous les a dans nav
 const head = document.querySelector('header');
 const section = document.querySelectorAll('section');
