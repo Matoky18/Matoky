@@ -284,6 +284,22 @@ img {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* skills */
 
 .skill{
@@ -299,6 +315,7 @@ img {
         align-items: center;
         flex-direction: column;
         margin-top: 2vh;
+        
         /* background: #79a57c; */
     }
 
@@ -717,14 +734,14 @@ img {
 
     /* skills */
 
-   
-
-    
+       
     .skill{
         display: flex;
         height: 100vh;
         flex-direction: column;
         align-items: center;
+        justify-content: center;
+        /* background: orange; */
     }
 
 
@@ -732,16 +749,19 @@ img {
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 100%;
-        width: 100%;
-        /* background: #79a57c; */
+        /* height: 50%; */
+        width: 70%;
+        flex-wrap: wrap;
+   
+       
+        background: #79a57c;
     }
 
     .icon>div {
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin-left: 100px;
+        margin-inline: 50px;
         transition: all ease 0.5s;
         
     }
@@ -770,14 +790,19 @@ img {
         align-items: center;
         height: 100vh;
         width: 100%;
-        gap:5vh;
+        /* gap:5vh; */
+        box-sizing: border-box;
     }
 
     .hero-project {
         display: flex;
         justify-content: center;
         gap: 50px;
-        width: 100%;
+        max-width: 90%;
+        /* background: red; */
+        flex-wrap: wrap;
+        box-sizing: border-box;
+
     }
 
    .item-project {
