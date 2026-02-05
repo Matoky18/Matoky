@@ -51,12 +51,12 @@ itemProject.forEach(item=>
 function supprimerajouter() {
 
     boutonhamburger.classList.toggle('bx-x'); //changer le bouton hamburger en croix
-    menu.classList.toggle('active');
-    cv.classList.toggle('active'); //cacher le menu
-    lang.classList.toggle('active');
-    iconreseau.classList.toggle('active');
-    bouton.classList.toggle('active');
-    hireme.classList.toggle('active');
+    menuMobile.classList.toggle('active');
+    // cv.classList.toggle('active');
+    // lang.classList.toggle('active');
+    // iconreseau.classList.toggle('active');
+    // bouton.classList.toggle('active');
+    // hireme.classList.toggle('active');
 
 }
 
