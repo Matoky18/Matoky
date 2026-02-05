@@ -52,22 +52,14 @@ function supprimerajouter() {
 
     boutonhamburger.classList.toggle('bx-x'); //changer le bouton hamburger en croix
     menuMobile.classList.toggle('active');
-    // cv.classList.toggle('active');
-    // lang.classList.toggle('active');
-    // iconreseau.classList.toggle('active');
-    // bouton.classList.toggle('active');
-    // hireme.classList.toggle('active');
-
+    // document.body.style.overflow = "auto"
 }
 
 
 function cachermenu() {
-    menu.classList.remove('active');
-    cv.classList.remove('active');
-    lang.classList.remove('active');
-    iconreseau.classList.remove('active');
-    bouton.classList.remove('active');
-    hireme.classList.add('active');
+   
+    boutonhamburger.classList.add('bx-x'); 
+    
 }
 
 
@@ -78,13 +70,15 @@ lien.forEach(function(unlien) {
 
 })
 
-//cacher le menu apres chargement de la page
+
 if (menu.classList.contains('active')) {
     cachermenu();
 }
 
 //ajouter le click au menu hamburger
 boutonhamburger.addEventListener("click",supprimerajouter);
+
+
 
 
 if (window.innerWidth >= 768) {
@@ -153,8 +147,7 @@ if (window.innerWidth >= 768) {
                     head.classList.remove('unactive');
                     head.classList.remove('active-link');
                     
-                    
-                }
+                    }
 
 
                 section.forEach(function(s) { //pour detecter le navitem acitve.

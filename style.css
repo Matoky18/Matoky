@@ -101,6 +101,8 @@ h1 {
     height: 100vh;
     z-index: 1;
     /* background: goldenrod; */
+    overflow: hidden;
+
 }
 
 
@@ -113,15 +115,13 @@ h1 {
     position: fixed;
     display: flex;
     background: rgba(255, 255, 255, 0.514);
-    background: rgba(230, 25, 25, 0.267);
+    /* background: rgba(230, 25, 25, 0.267); */
     height: 100vh;
-    min-width: 250px;
-    width: 50vw;
+    width: 300px;
     max-width: 100vw;
-    /* margin-left: 50vw; */
     overflow: hidden;
-    z-index: 10;
-    /* backdrop-filter: blur(2px); */
+    z-index: 5;
+    backdrop-filter: blur(3px);
     
 }
 
@@ -132,27 +132,16 @@ header {
     width: 100%;
 }
 
-nav {
-    display: none;
+.menu-mobile > nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    width: 100%;
+    height: 100%;
 }
 
-/* nav.active {
-    color: var(--main-color);
-    display: flex;
-    position: absolute;
-    flex-direction: column;
-    justify-content: center;
-    gap: 5vh;
-    align-items: center;
-    height: 90vh;
-    bottom: 0;
-    width: 100%;
-    z-index: 5;
-    backdrop-filter: blur(10px);
-    width: 100vw; 
-     z-index: 2;
-    
-} */
 
 .menu-mobile.active a {
     color: black;
@@ -168,7 +157,7 @@ nav {
     /* color: black; */
     color: rgb(57, 211, 43);
     padding: 0;
-    z-index: 150;
+    
 }
 
 
@@ -187,6 +176,7 @@ nav {
     position: fixed;
     right: 10px;
     top: 10px;
+    z-index: 10;
 }
 
 .lang {
@@ -214,6 +204,7 @@ nav {
     /* background: #c02c2c; */
     align-items: top;
     width: 100%;
+   
 }
 
 
