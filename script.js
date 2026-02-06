@@ -12,7 +12,7 @@ const iconreseau = document.querySelector('.iconhome');
 const bouton = document.querySelector('.bouton');
 const hireme = document.querySelector('.hirenavbouton');
 const itemProject = document.querySelectorAll(".item-project");
-
+const body = document.querySelector("body")
 
 
 itemProject.forEach(item=>
@@ -52,6 +52,8 @@ function supprimerajouter() {
 
     boutonhamburger.classList.toggle('bx-x'); //changer le bouton hamburger en croix
     menuMobile.classList.toggle('active');
+    body.classList.toggle("menu-ouvert")
+
     // document.body.style.overflow = "auto"
 }
 
@@ -74,6 +76,8 @@ lien.forEach(function(unlien) {
 if (menu.classList.contains('active')) {
     cachermenu();
 }
+
+
 
 //ajouter le click au menu hamburger
 boutonhamburger.addEventListener("click",supprimerajouter);
