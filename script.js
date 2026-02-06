@@ -73,9 +73,7 @@ lien.forEach(function(unlien) {
 })
 
 
-if (menu.classList.contains('active')) {
-    cachermenu();
-}
+
 
 
 
