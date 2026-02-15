@@ -356,7 +356,14 @@ img {
         height: 100vh;
         flex-direction: column;
         align-items: center;
+        justify-content: center;
+        /* background: #d1c662; */
     }
+
+    .hero-skill h1 {
+        text-align: center;
+    }
+
 
  .icon {
         display: flex;
@@ -388,19 +395,129 @@ img {
 
 /* fin skills */ 
 
+
+
+
+
+
+
+
+
+
+
+
 /* project */
 
-.container.project {
+  .container.project {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-height: 100vh;
+        width: 100%;
+        gap:5vh;
+        padding-block: 50px ;
+        box-sizing: border-box;
+        /* background: #47dd42; */
+        
+    }
+
+    .hero-project {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        max-width: 90%;
+        /* background: red; */
+        flex-wrap: wrap;
+        box-sizing: border-box;
+
+    }
+
+   .item-project {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    height: 100vh;
+    flex-direction: column;
+    max-width: 500px ;
+    width: 80vw;
+    height: 50vh;
+    background: #ffffffde;
+    border: 1px solid #570bb435;
+    border-radius: 6px;
+    }
+
+    .item-project:hover {
+        cursor: pointer;
+    }
+
     
-}
+
+    /* .item-project details{
+        display: none;
+        display: flex;
+        flex-direction: column;
+        height: 50%;
+    } */
+
+    .image1 , .image2 {
+        border-radius: 3px;
+        width: 95%;
+        height: 95%;
+        
+    }
+
+    .image1 {
+
+        background-image: url("./image/ag\ digitale.PNG");
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .image2 {
+
+        background-image: url("./image/boutique\ alphaFitness.PNG");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: right;
+    }
+
+    .container.project .titre-projet {
+        font-family: "cookie";
+        text-align: center;
+        font-size: 30px;
+        padding-inline: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        background: rgba(255, 255, 255, 0.452);
+        backdrop-filter: blur(2px);
+        box-sizing: border-box;
+        transition: 0.5s;
+    }
+
+    .container.project .titre-projet.hovering {
+        display: none;
+        transition: 0.5s;
+    
+    }
+   
 
 
 
 /* fin project */
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* contact */
 
@@ -462,6 +579,7 @@ img {
 }
 
 .send:active {
+    background: red;
     box-shadow: 3px 3px 7px 1px rgba(0, 0, 0, 0.25), -5px -3px 17px 4px white;
 }
 
@@ -937,7 +1055,7 @@ img {
     }
    
 
-    /* fin projetc */
+    /* fin project */
 
 
 
@@ -987,7 +1105,7 @@ img {
     
     /* height: 53px; */
     font-size: 110%;
-    width: 8vw;
+    width: 150px;
     min-height: 50px;
     height: 5vh;
     

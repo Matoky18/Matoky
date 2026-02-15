@@ -60,8 +60,8 @@ function supprimerajouter() {
 
 function cachermenu() {
    
-    boutonhamburger.classList.add('bx-x'); 
-    
+    boutonhamburger.classList.toggle('bx-x'); 
+    menuMobile.classList.toggle('active');
 }
 
 
@@ -69,6 +69,7 @@ function cachermenu() {
 lien.forEach(function(unlien) {
 
     unlien.addEventListener("click",cachermenu);
+     
 
 })
 
