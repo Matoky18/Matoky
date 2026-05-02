@@ -15,11 +15,18 @@
         
     },
     "Skill" : {
-        "titre":"Compétence"
+        "titre":"Compétence",
+       
         
     },
     "project" : {
-        "titre":"Mes projets"
+        "titre":"Mes projets",
+        "detail-projet-agence-digital" : "Une vitrine élégante pour une agence digitale. Services en création web, marketing et SEO, design minimaliste, témoignages clients et mise en avant d’expertise pour renforcer crédibilité et attirer de nouveaux partenaires.",
+        "detail-projet-electricien-julien" : "Landing page orientée conversion pour un électricien. Présentation des services, zones d'intervention et appel à l'action clair pour générer des demandes de devis.",
+        "detail-boutique-alpha-fitness" : "Un site vitrine dynamique présentant des équipements sportifs essentiels. Design moderne, produits phares mis en avant, avantages clairs et navigation fluide pour inspirer confiance et inciter à l’achat.",
+        "detail-projet-landing-plombier" : "Landing page professionnelle pour un artisan plombier. Structure pensée pour le référencement local et la prise de contact rapide avec une présentation claire des coordonnées",
+
+
 
     },
     "contact" : {

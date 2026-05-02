@@ -19,7 +19,13 @@
         
     },
     "project" : {
-        "titre":"What I've built"
+        "titre":"What I've built",
+        "detail-projet-agence-digital" : "An elegant showcase for a digital agency. Web creation, marketing and SEO services, minimalist design, client testimonials, and highlighted expertise to strengthen credibility and attract new partners.",
+        "detail-projet-electricien-julien" : "Conversion-focused landing page for an electrician. Highlights services, coverage areas and a clear call-to-action to generate quote requests.",
+        "detail-boutique-alpha-fitness" : "A dynamic showcase website presenting essential sports equipment. Modern design, highlighted key products, clear advantages, and smooth navigation to inspire trust and encourage purchases.",
+        "detail-projet-landing-plombier" : "Professional landing page for a plumber. Built for local SEO and fast contact, with a clear display of contact information.",
+
+        
 
     },
     "contact" : {
