@@ -66,6 +66,8 @@ function setLanguage () {
 
                 datakey.textContent = res[parts[0]][parts[1]]
 
+                console.log("last debug",parts[0], parts[1], res[parts[0]])
+
                 console.log("getAttribute : ", key, "parts" , parts , "datakey.textContent : ", datakey.textContent)
         
 
