@@ -2,15 +2,15 @@
 
     "header" : {
         "home": "Home",
-        "skills": "Skill",
+        "skills": "Skills",
         "project":"Project",
         "contact":"Contact",
         "hire":"Hire me",
-        "lang":"Fr"
+        "lang":"FR"
     },
     "home" : {
 
-        "work":"Developper Web",
+        "work":"Web Developper",
         "cv":"Download CV"
         
     },

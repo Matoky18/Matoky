@@ -8,12 +8,89 @@ const section = document.querySelectorAll('section');
 const monnom = document.querySelector('.monnom');
 const bienvenu = document.querySelector('.bienvenu');
 const cv = document.querySelector('.cv1');
-const lang = document.querySelector('.lang');
+const language = document.querySelectorAll('.lang');
 const iconreseau = document.querySelector('.iconhome');
 const bouton = document.querySelector('.bouton');
 const hireme = document.querySelector('.hirenavbouton');
 const itemProject = document.querySelectorAll(".item-project");
 const body = document.querySelector("body")
+const dataKey = document.querySelectorAll('[data-key]')
+
+
+
+
+
+
+// changer langue
+
+let activeLang = "ANG"
+
+language.forEach((lang)=>{    
+
+    lang.addEventListener("click",()=>{
+        
+        console.log("lang cliqué")
+        setLanguage()
+
+    })
+})
+
+
+
+function setLanguage () {
+
+    if (activeLang==="FR") {
+       activeLang = "ANG"       
+    } else {
+        activeLang = "FR"
+    }
+
+
+    fetch(`lang/${activeLang}.json`)
+    .then (        
+        (res)=>
+            
+            {
+                console.log(res)
+                return res.json()
+            }
+    )
+    .then((res)=>
+        
+        {
+            dataKey.forEach(datakey=>{
+
+                let key = datakey.getAttribute("data-key")
+
+                let parts = key.split(".")           
+
+                datakey.textContent = res[parts[0]][parts[1]]
+
+                console.log("getAttribute : ", key, "parts" , parts , "datakey.textContent : ", datakey.textContent)
+        
+
+        })
+
+}
+
+)
+
+    
+
+    
+
+}
+
+// fin changer langue
+
+
+
+
+
+
+
+
+
 
 
 
@@ -164,7 +241,7 @@ if (window.innerWidth >= 768) {
 
             if (houb>0 ) {
                
-                console.log("baisser");
+                // console.log("baisser");
 
                 currentmove = lastmove;
 
@@ -179,7 +256,7 @@ if (window.innerWidth >= 768) {
                 // console.log("monter");
                 
                 currentmove = lastmove;
-                console.log("Monter");
+                // console.log("Monter");
                 head.classList.add('active-link');
                 head.classList.remove('unactive');
 
@@ -201,10 +278,10 @@ if (window.innerWidth >= 768) {
                    
 
                     if ((bottomsection < window.innerHeight/2) || (topsection>=window.innerHeight/2) ) {                        
-                        console.log("titre non actif : ",s.id);                      
+                        // console.log("titre non actif : ",s.id);                      
                                             
                     }  else if ((bottomsection>=window.innerHeight/2)|| (topsection<window.innerHeight/2) ) {
-                       console.log("titre actif : ",s.id);                       
+                    //    console.log("titre actif : ",s.id);                       
                        
                        lien.forEach((item) => {
                             
@@ -236,52 +313,3 @@ if (window.innerWidth >= 768) {
 
 
 
-// changer langue
-
-let traduction = {};
-let langactuelle = 'angl';
-
-async function chargertraductions() {
-    //await : il met en pause la fonction le temps que la donnée soit prête (ici fetch)
-    //fetch() sert à aller chercher des données sur un serveur (par exemple un 
-    // fichier JSON ou une page web).
-    //then() sert à dire ce qu’on veut faire quand une promesse est réussie (resolved).
-    //promesse : c’est quelque chose qu’on attend
-
-    const fr = await fetch('lang/fr.json') .then(res => res.json());
-    const angl = await fetch ('lang/angl.json') .then(res => res.json());
-    traduction ={fr,angl};
-    updatelanguage(langactuelle);
-}
-
-chargertraductions();
-
-document.getElementById('lang-switcher').addEventListener('click',() =>
-
-    {
-        //if fr alors angla sinon fr
-        langactuelle=langactuelle==='fr'?'angl':'fr';
-        updatelanguage(langactuelle);
-    }
-
-    
-);
-
-function updatelanguage(lang) {
-    const data = traduction[lang];
-    // dataset.key lit la valeur de l’attribut data-key.
-    // `split()` sert à **couper une chaîne de caractères** selon un **séparateur** et à **renvoyer un tableau** des morceaux obtenus.
-
-    document.querySelectorAll('[data-key]').forEach(el=> {
-        const keys = el.dataset.key.split('.') //ici (ex. "header.title") et on la coupe au niveau du point . pour obtenir : ["header", "title"]
-        let value = data;
-        keys.forEach(k=> value = value [k]);
-        if (value) el.textContent=value;
-
-    });            
-}
-
-
-
-
-// fin changer langue

@@ -111,6 +111,28 @@ body.menu-active .container-menu-mobile {
 
 }
 
+body.menu-active .menu-mobile > .lang {
+    position: fixed;
+    top: 35px;
+    left: 25px;
+    display: flex;
+    justify-content: end;
+    gap: 12.5px;
+    /* background: red; */
+}
+
+body.menu-active .menu-mobile > .lang > p {
+
+    font-size: larger;
+}
+
+
+
+body.menu-active .menu-mobile > .lang > svg {
+    width: 25px;
+    color: rgb(99, 92, 92);
+}
+
 .menu-mobile {
     
     height: 100%;
@@ -140,8 +162,9 @@ body.menu-active .bx-x {
     position: fixed;
     right: 25px;
     top: 25px;
+    /* background: magenta; */
     /* color: rgb(57, 211, 43); */
-    padding: 0;
+    padding: 0px;
     width: 50px;
     z-index: 500;
 
@@ -205,18 +228,6 @@ body.menu-active .menu-mobile a {
 
 
 
-.lang {
-    display: none;
-}
-
-.lang.active {
-    position: absolute;
-    left: 20px;
-    top: 30px;
-    display: flex;
-    align-items: center;
-    font-size: larger;
-}
 
 /* fin nav */
 
@@ -734,6 +745,7 @@ img {
         position: absolute;
         font-size: clamp(18px,1vw,25px);
         display: flex;
+        gap: 12.5px;
         align-items: center;
         transform: translateX(-20px);
         left: clamp(70px,15vw,250px);
