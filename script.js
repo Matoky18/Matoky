@@ -1,6 +1,7 @@
-const boutonhamburger = document.querySelector('.bx-menu-alt-right');
+const hamburgerIconMenu = document.querySelector('.hamburger');
+const crossMarkIcon = document.querySelector('.bx-x');
 const menu = document.querySelector('nav');
-const menuMobile = document.querySelector('.menu-mobile')
+const menuMobile = document.querySelector('.container-menu-mobile')
 const lien = document.querySelectorAll('nav a'); //selectionner tous les a dans nav
 const head = document.querySelector('header');
 const section = document.querySelectorAll('section');
@@ -15,6 +16,61 @@ const itemProject = document.querySelectorAll(".item-project");
 const body = document.querySelector("body")
 
 
+
+
+
+
+
+//menu mobile : hamburger et crossMark
+
+function toggleMenu() {
+    body.classList.toggle("menu-active")
+
+}
+
+function closeMenu() {
+    body.classList.remove("menu-active")
+}
+
+
+hamburgerIconMenu.addEventListener("click",toggleMenu)
+
+lien.forEach(unLien => {
+    unLien.addEventListener("click",closeMenu)
+})
+
+
+
+
+
+hamburgerIconMenu.addEventListener("click",()=>{
+    
+    console.log("hamburger menu icon cliqué")
+})
+
+crossMarkIcon.addEventListener("click",()=>{
+    closeMenu()
+    console.log("cross mark cliqued")
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//les item projet 
 itemProject.forEach(item=>
 
     {
@@ -25,7 +81,6 @@ itemProject.forEach(item=>
             
             titre.classList.add("hovering")
        
-
         })
 
 
@@ -48,42 +103,28 @@ itemProject.forEach(item=>
 )
 
 
-function supprimerajouter() {
-
-    boutonhamburger.classList.toggle('bx-x'); //changer le bouton hamburger en croix
-    menuMobile.classList.toggle('active');
-    body.classList.toggle("menu-ouvert")
-
-    // document.body.style.overflow = "auto"
-}
-
-
-function cachermenu() {
-   
-    boutonhamburger.classList.toggle('bx-x'); 
-    menuMobile.classList.toggle('active');
-}
-
-
-//pour parcourir les "lien" via "unlien"
-lien.forEach(function(unlien) {
-
-    unlien.addEventListener("click",cachermenu);
-     
-
-})
 
 
 
 
 
 
-//ajouter le click au menu hamburger
-boutonhamburger.addEventListener("click",supprimerajouter);
 
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+//gestion des item menu sur desktop
 if (window.innerWidth >= 768) {
 
     //changer le style des éléments nav ouvert avec le desktop
