@@ -15,7 +15,8 @@
         
     },
     "Skill" : {
-        "titre":"Skills"
+        "titre":"My skills",
+        "intro" : "Technical skills applied in my projects, covering front‑end development and UI/UX design."
         
     },
     "project" : {

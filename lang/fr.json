@@ -15,8 +15,8 @@
         
     },
     "Skill" : {
-        "titre":"Compétence"
-       
+        "titre":"Compétence",
+        "intro" : "Compétences techniques appliquées dans mes projets, couvrant développement front‑end, design UI/UX"
         
     },
     "project" : {

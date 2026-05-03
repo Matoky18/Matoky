@@ -231,7 +231,7 @@ h1 {
               
     }
 
-      .contact {
+      #contact {
       
         background: linear-gradient(white,#e8e0f3);
     }
@@ -246,15 +246,32 @@ h1 {
 /* background bg fin */
 
 
-
+/*image gsap et github*/
+.skill > .hero-skill > h2 {
+    font-family: "Cookie" ,serif;
+    font-size: 4rem;
+    color: #570BB4;
+    font-weight: normal;
+}
 .skill > .hero-skill > .icon > .gsap > img {
     width: 100px;
 }
 .skill > .hero-skill > .icon > .GitHub > img {
     width: 100px;
 }
+/*image gsap et github fin*/
 
 
+.container.contact h2 {
+    color: #570BB4;
+    font-weight: normal;
+    font-family: "Cookie" ,serif;
+}
+
+.phrasetitre  > p {
+    text-align: center;
+    color: rgba(0, 0, 0, 0.637);
+}
 
 
 
@@ -457,11 +474,6 @@ body.menu-active .menu-mobile a {
 }
 
 
-img {
-    display: none;
-}
-
-
 
 .monnom {
     font-size: 50px;
@@ -563,17 +575,25 @@ img {
 
 /* skills */
 
-.skill{
+.skill , .hero-skill {
         display: flex;
         padding-bottom: 50px;
         flex-direction: column;
         align-items: center;
-        justify-content: center;
         /* background: #d1c662; */
     }
 
-    .hero-skill h1 {
+    .hero-skill h2 {
         text-align: center;
+    }
+    .hero-skill > p {
+        text-align: center;
+        width: 100%;
+        max-width: 450px;
+        margin-top: 25px;
+        padding-inline : 25px ;
+        box-sizing: border-box;
+        /* background: #ad7b7b; */
     }
 
 
@@ -583,7 +603,8 @@ img {
         align-items: center;
         flex-direction: column;
         padding-top: 50px;
-        
+        box-sizing: border-box;
+
         /* background: #79a57c; */
     }
 
@@ -591,18 +612,14 @@ img {
         display: flex;
         flex-direction: column;
         align-items: center;
+        width: 100%;
+        gap: 12.5px;
         transform: scale(0.8);
         transition: all ease 0.5s;
         
     }
 
-   
-    .skill > .hero-skill > .icon > .gsap > img {
-    width: 100px;
-    }
-    .skill > .hero-skill > .icon > .GitHub > img {
-        width: 100px;
-    }       
+
 
 
     .icon > div:hover > svg  {
@@ -646,21 +663,27 @@ img {
         display: flex;
         flex-direction: column;
         align-items: center;
-        height: 100vh;
+        padding-block: 50px;
         overflow: hidden;
         width: 100%;
         /* background: green; */
     }
 
-.phrasetitre {
+    .container.contact  h2 {
+        font-size: 2.5rem;
+        padding-bottom: 12.5px;
+    }
+
+    .phrasetitre {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        width: 100%;
-        margin-top: 10vh;
+        width: 90%;
+        max-width: 450px;
+       
         /* background: #854e4e; */
-        width: 100%;
+       
    }
 
 .ch1, .message {
@@ -677,25 +700,24 @@ img {
 }
 
 .ch1 {
-    height: 40px;
+    height: 75px;
 }
 
 .message {
     height: 75%;
-    padding-top: 15px;
+    padding-top: 25px;
 }
 
 .send {
     background: rgb(246, 237, 250);
     color: rgb(121, 0, 105);
     font-size: 100%;
-    width: 20vw;
-    max-width: 200px;
-    min-width: 150px;
-    height: 40px;
-    border-radius: 40px;
+    width: 90%;
+    max-width: 300px;
+    height: 50px;
+    border-radius: 50px;
     border: 0px;
-    margin-top: 30px;
+    margin-top: 40px;
     box-shadow: 3px 3px 7px 1px rgba(0, 0, 0, 0.25),-5px -3px 17px 4px rgb(255, 253, 253);
 }
 
@@ -710,7 +732,7 @@ img {
     width: 100%;
     align-items: center;
     justify-content: center;
-    height: 90vh;
+    padding-top: 50px;
     /* background: red; */
 }
 
@@ -721,9 +743,9 @@ img {
     align-items: center;
     background: rgb(106, 91, 107,0.12);
     width: 90%;
-    height: 70vh;
+    height: 500px;
     max-width: 450px;
-    gap: 20px;
+    gap: 25px;
     border-radius: 20px;
     padding-block: 20px;
     box-shadow: -3px -6px 15px 0px white, 6px 4px 10px 1px rgba(0, 0, 0, 0.25);
@@ -954,13 +976,7 @@ img {
 
     
 
-    .para.gauche {
-
-        /* color: rgb(70, 180, 180); */
-        display: flex;
-        text-align: center;
-        align-items: center;           
-    }
+   
 
     .paraicon {
        
@@ -1255,17 +1271,26 @@ img {
         align-items: center;
         justify-content: center;
         height: 100vh;
-        gap: 3vh;
+        gap: 50px;
         width: 100%;
+        padding-bottom: 25px;
         background: linear-gradient(white,#e8e0f3);
     }
 
+    .contact > .phrasetitre > h2 {
+        font-size: 4rem;
+        /* margin-bottom: -10px; */
+        padding-block: 12.5px;
+    }
+  
    .phrasetitre {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         width: 100%;
+        max-width: 450px;
+        gap: 0px;
         /* margin-top: 10vh; */
         /* background: #854e4e; */
    }
@@ -1273,21 +1298,22 @@ img {
    .ch1, .message {
     
     background: rgb(253,246,252);
-    border-radius: 4px;
+    border-radius: 5px;
     
-    width: 70%;
+    width: 100%;
+    box-sizing: border-box;
     border: 0px;
-    padding-inline: 10%;
+    padding-left: 50px ;
     box-shadow: inset -3px -2px 5px 1px white, inset 4px 3px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
 .ch1 {
-    height: 70px;
+    height: 75px;
 }
 
 .message {
     height: 250px;
-    padding-top: 10px;
+    padding-top: 30px;
 }
 
 .ch1:focus , .message:focus {
@@ -1300,14 +1326,14 @@ img {
     color: rgb(121, 0, 105);
     
     /* height: 53px; */
-    font-size: 110%;
-    width: 150px;
-    min-height: 50px;
-    height: 5vh;
+    font-size: 1rem;
+    width: 300px;
+    height: 50px;
+    
     
     border-radius: 40px;
     border: 0px;
-    margin-top: 30px;
+    margin-top: 50px;
     transition: box-shadow ease 0.5s;
     box-shadow: 3px 3px 7px 1px rgba(0, 0, 0, 0.25),-5px -3px 17px 4px rgb(255, 253, 253);
 }
@@ -1342,11 +1368,10 @@ img {
     align-items: center;
     background: rgb(106, 91, 107,0.12);
     max-width: 500px;
-    min-width: 250px ;
-    width: 40vw ;
-    gap: 20px;
+    width: 50vw ;
+    gap: 25px;
     border-radius: 20px;
-    padding-block: 20px;
+    padding: 25px;
     box-shadow: -3px -6px 15px 0px white, 6px 4px 10px 1px rgba(0, 0, 0, 0.25);
     
 }
