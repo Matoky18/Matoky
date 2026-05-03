@@ -565,7 +565,7 @@ img {
 
 .skill{
         display: flex;
-        height: 100vh;
+        padding-bottom: 50px;
         flex-direction: column;
         align-items: center;
         justify-content: center;
@@ -582,7 +582,7 @@ img {
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        margin-top: 2vh;
+        padding-top: 50px;
         
         /* background: #79a57c; */
     }
@@ -596,7 +596,16 @@ img {
         
     }
 
-    .icon > div:hover svg  {
+   
+    .skill > .hero-skill > .icon > .gsap > img {
+    width: 100px;
+    }
+    .skill > .hero-skill > .icon > .GitHub > img {
+        width: 100px;
+    }       
+
+
+    .icon > div:hover > svg  {
         cursor: pointer;
         transform: scale(0.8);
         overflow: visible;
@@ -1029,8 +1038,7 @@ img {
        
     .skill{
         display: flex;
-        height: 100vh;
-        
+        height: 100vh;        
         width: 100%;
         flex-direction: column;
         align-items: center;

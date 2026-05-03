@@ -15,7 +15,7 @@ const hireme = document.querySelector('.hirenavbouton');
 const itemProject = document.querySelectorAll(".item-project");
 const body = document.querySelector("body")
 const dataKey = document.querySelectorAll('[data-key]')
-
+const placeholderDataKey = document.querySelectorAll("[data-placeholder-key]")
 
 
 
@@ -31,6 +31,7 @@ language.forEach((lang)=>{
         
         console.log("lang cliqué")
         setLanguage()
+       
 
     })
 })
@@ -46,12 +47,17 @@ function setLanguage () {
     }
 
 
+
+
+
+
+
     fetch(`lang/${activeLang}.json`)
     .then (        
         (res)=>
             
             {
-                console.log(res)
+                // console.log(res)
                 return res.json()
             }
     )
@@ -64,24 +70,34 @@ function setLanguage () {
 
                 let parts = key.split(".")           
 
-                datakey.textContent = res[parts[0]][parts[1]]
+               
 
-                console.log("last debug",parts[0], parts[1], res[parts[0]])
 
-                console.log("getAttribute : ", key, "parts" , parts , "datakey.textContent : ", datakey.textContent)
+                if (datakey.tagName === "INPUT" || datakey.tagName==="TEXTAREA" ) {
+                    datakey.placeholder = res[parts[0]][parts[1]]
+                    // console.log("last debug",parts[0], parts[1], res[parts[0]])
+                }
+
+                else {
+                     datakey.textContent = res[parts[0]][parts[1]]
+                }
+
+
+
+                // console.log("last debug",parts[0], parts[1], res[parts[0]])
+
+                // console.log("getAttribute : ", key, "parts" , parts , "datakey.textContent : ", datakey.textContent)
         
 
         })
 
 }
 
-)
+)}
 
-    
 
-    
 
-}
+
 
 // fin changer langue
 

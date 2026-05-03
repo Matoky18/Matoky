@@ -33,8 +33,8 @@
         "phrase":"Parlons de vos idées ! Que ce soit pour un projet, une collaboration ou un simple échange, je serai ravi de vous lire.",
         "send":"Envoyer",
         "placeholder-name": "Entrer votre nom" ,
-        "placeholder-mail": "Entrer votre mail" ,
-        "placeholder-message":"Parlez de votre projet" 
+        "placeholder-mail": "Entrer votre email" ,
+        "placeholder-message":"Partagez les détails de votre projet ou vos questions" 
 
     }
 }
