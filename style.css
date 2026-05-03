@@ -337,9 +337,10 @@ body.menu-active .hamburger {
 .hamburger {
     width: 50px;
     position: fixed;
-    right: 25px;
+    right: 20px;
     top: 25px;
     z-index: 10;
+    background: salmon;
 }
 
 .bx-x  {
