@@ -742,7 +742,7 @@ body.menu-active .menu-mobile a {
     justify-content: center;
     align-items: center;
     background: rgb(106, 91, 107,0.12);
-    width: 90%;
+    width: calc(100% - 50px);
     height: 500px;
     max-width: 450px;
     gap: 25px;
