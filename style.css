@@ -225,11 +225,34 @@ h1 {
 /* projet mobile fin */
 
 
+/* background bg */
+ .project {       
+        background: linear-gradient(180deg,#F3EFF9,#FFFFFF) ;
+              
+    }
+
+      .contact {
+      
+        background: linear-gradient(white,#e8e0f3);
+    }
+
+    .skill {
+        background: linear-gradient(#FEFDFE,#F3EFF9);
+    }
+    .home {
+        background: linear-gradient(#F1EDF9,#FEFDFE);
+    }
+
+/* background bg fin */
 
 
 
-
-
+.skill > .hero-skill > .icon > .gsap > img {
+    width: 100px;
+}
+.skill > .hero-skill > .icon > .GitHub > img {
+    width: 100px;
+}
 
 
 
@@ -1007,7 +1030,8 @@ img {
     .skill{
         display: flex;
         height: 100vh;
-        margin-bottom: 10vh;
+        
+        width: 100%;
         flex-direction: column;
         align-items: center;
         justify-content: center;
@@ -1020,7 +1044,7 @@ img {
         align-items: center;
         justify-content: center;
         /* height: 100%; */
-        max-width: 70%;
+        width: calc(100% - 100px);
         gap: 150px;
         /* background: gold; */
     }
@@ -1130,7 +1154,10 @@ img {
         justify-content: center;
         gap: 25px;
         margin-top: 50px;
-        flex-wrap: nowrap;
+        flex-wrap: wrap;
+        /* background: olive; */
+        padding-inline: 100px;
+        box-sizing: border-box;
      }
 
      .project > ul > li {
