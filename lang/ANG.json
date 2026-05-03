@@ -30,7 +30,10 @@
     },
     "contact" : {
         "titre":"Contact",
-        "phrase":"Questions? Let's talk.",
-        "send":"Send"
+        "phrase":"Let’s talk about your ideas! Whether it’s a project, a collaboration, or just a casual exchange, I’d be delighted to hear from you.",
+        "send":"Send",
+        "placeholder-name": "Enter your name" ,
+        "placeholder-mail":"Enter your email" ,
+        "placeholder-message":"Share projects details or questions" 
     }
 }

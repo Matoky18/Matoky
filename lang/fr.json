@@ -30,8 +30,11 @@
     },
     "contact" : {
         "titre":"Contact",
-        "phrase":"Des questions ? Parlons-en.",
-        "send":"Envoyer"
+        "phrase":"Parlons de vos idées ! Que ce soit pour un projet, une collaboration ou un simple échange, je serai ravi de vous lire.",
+        "send":"Envoyer",
+        "placeholder-name": "Entrer votre nom" ,
+        "placeholder-mail": "Entrer votre mail" ,
+        "placeholder-message":"Parlez de votre projet" 
 
     }
 }
