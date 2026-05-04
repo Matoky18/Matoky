@@ -31,7 +31,6 @@ language.forEach((lang)=>{
         
         console.log("lang cliqué")
         setLanguage()        
-        // alert("Lang!!!")
 
     })
 })
