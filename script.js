@@ -30,7 +30,9 @@ language.forEach((lang)=>{
     lang.addEventListener("click",()=>{
         
         console.log("lang cliqué")
-        setLanguage()        
+        setLanguage()     
+        alert (activeLang)   
+        alert(setLanguage)
 
     })
 })
