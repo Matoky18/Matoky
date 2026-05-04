@@ -275,6 +275,28 @@ h1 {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* mobile */
 @media (max-width:767px) {
 
@@ -340,7 +362,7 @@ body.menu-active .hamburger {
     right: 20px;
     top: 25px;
     z-index: 10;
-    background: salmon;
+    /* background: salmon; */
 }
 
 .bx-x  {
@@ -481,7 +503,7 @@ body.menu-active .menu-mobile a {
     font-weight: bold;
     color: rgb(87,11,180) ;
     text-shadow:  3px 1px 8px rgb(3, 3, 3,0.25);
-    
+    text-align: center;
 }
 
 .workname {
@@ -763,6 +785,12 @@ body.menu-active .menu-mobile a {
 
 
 
+ 
+
+
+
+
+
 
 
 
@@ -775,6 +803,9 @@ body.menu-active .menu-mobile a {
         
     }
 
+
+
+  
     
 
     /* nav */
@@ -794,10 +825,10 @@ body.menu-active .menu-mobile a {
         justify-content: center;   
         -webkit-backdrop-filter: blur(5px);
         backdrop-filter: blur(3px);
-        border-bottom: solid rgba(179, 161, 161, 0) 2px;        
+        border-bottom: solid rgba(139, 131, 139, 0.253) 1px;        
         /* background: magenta; */
         transition: all 1s ease;
-        
+        box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.116);
 
     }
 
@@ -822,7 +853,7 @@ body.menu-active .menu-mobile a {
         /* margin-right: 30vw; */
         
         display: flex;
-        gap: 4vw; 
+        gap: clamp(25px,4vw,50px) ; 
         justify-content: center;       
         align-items: center;              
         /* background: #3f585c; */
@@ -840,19 +871,27 @@ body.menu-active .menu-mobile a {
         position: absolute;
          color: black;
          font-weight: 700;
-         font-size: clamp(25px,1.6vw,50px);         
-         right: clamp(50px,10vw,200px);        
-         /* background: rgb(104, 148, 59);    */
-     }
+         font-size: clamp(18px,1.3vw,25px);
+         /* right: clamp(25px,10vw,200px);         */
+         right: clamp(25px,5vw,200px);
+         /* background: rgb(104, 148, 59);   */
+         width: 250px; 
+        text-align: right;
+
+}
 
      .lang {
+        display: flex;
+        align-items: center;
         position: absolute;
-        font-size: clamp(18px,1vw,25px);
+        font-size: clamp(15px,1vw,25px);
         display: flex;
         gap: 12.5px;
         align-items: center;
-        transform: translateX(-20px);
-        left: clamp(70px,15vw,250px);
+        width: 250px; 
+        
+        left: clamp(25px,5vw,250px);
+        /* background: lawngreen; */
     }
 
     .lang:hover {
@@ -1055,7 +1094,6 @@ body.menu-active .menu-mobile a {
        
     .skill{
         display: flex;
-        height: 100vh;        
         width: 100%;
         flex-direction: column;
         align-items: center;
@@ -1070,8 +1108,16 @@ body.menu-active .menu-mobile a {
         justify-content: center;
         /* height: 100%; */
         width: calc(100% - 100px);
-        gap: 150px;
+        
         /* background: gold; */
+    }
+
+    .hero-skill > p {
+        max-width: 450px;
+        width: 75%;
+        text-align: center;
+        margin-top: 25px;
+        margin-bottom: 75px;
     }
 
     .icon {
@@ -1081,7 +1127,8 @@ body.menu-active .menu-mobile a {
         /* height: 50%; */
         width: 100%;
         flex-wrap: wrap;
-   
+        gap: 50px;
+        margin-bottom: 150px;
        
         /* background: #79a57c; */
     }
@@ -1090,9 +1137,9 @@ body.menu-active .menu-mobile a {
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin-inline: 50px;
+        margin-inline: 25px;
+        
         transition: all ease 0.5s;
-        margin-block: 50px;
     }
 
     .icon > div:hover svg  {
