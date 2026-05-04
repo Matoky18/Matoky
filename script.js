@@ -30,8 +30,8 @@ language.forEach((lang)=>{
     lang.addEventListener("click",()=>{
         
         console.log("lang cliqué")
-        setLanguage()
-       
+        setLanguage()        
+        alert("Lang!!!")
 
     })
 })
@@ -45,11 +45,6 @@ function setLanguage () {
     } else {
         activeLang = "FR"
     }
-
-
-
-
-
 
 
     fetch(`lang/${activeLang}.json`)
