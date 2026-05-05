@@ -31,8 +31,8 @@ language.forEach((lang)=>{
         
         console.log("lang cliqué")
         setLanguage()     
-        alert (activeLang)   
-        alert(setLanguage)
+        // alert (activeLang)   
+        // alert(setLanguage)
 
     })
 })
@@ -54,7 +54,10 @@ function setLanguage () {
             
             {
                 // console.log(res)
+               alert("fetch ok" + res.status)
                 return res.json()
+
+                
             }
     )
     .then((res)=>
@@ -66,8 +69,7 @@ function setLanguage () {
 
                 let parts = key.split(".")           
 
-               alert("fetch ok" + res.status)
-
+                
 
                 if (datakey.tagName === "INPUT" || datakey.tagName==="TEXTAREA" ) {
                     datakey.placeholder = res[parts[0]][parts[1]]
@@ -85,11 +87,16 @@ function setLanguage () {
                 // console.log("getAttribute : ", key, "parts" , parts , "datakey.textContent : ", datakey.textContent)
         
 
-        })
+            })
+
+        }
+
+    )
+    .catch(error => {
+        console.log("error" , error)
+    } )
 
 }
-
-)}
 
 
 
