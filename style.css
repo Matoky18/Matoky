@@ -283,7 +283,38 @@ h1 {
 
 
 
+/* bouton cv  */
+.cv1 , .cv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #9747FF;
+    color: whitesmoke;
+    border-radius: 50px;
+    box-shadow: 
+    inset 1px 2px 4px rgba(255, 255, 255, 0.637),
+    inset -1px -2px 4px rgba(0, 0, 0, 0.493);
+    
+}
 
+
+.cv:hover {
+     cursor: pointer;
+    transition: 0.5s ease;
+    background: #570BB4;
+}
+
+.cv1:active , .cv:active {
+   
+    box-shadow: 
+    inset -1px -2px 5px rgba(255, 255, 255, 0.336),
+    inset 2px 2px 4px rgba(0, 0, 0, 0.493),
+    1px 2px 5px rgba(0, 0, 0, 0.575);
+}
+
+
+
+/* bouton cv fin */
 
 
 
@@ -522,47 +553,30 @@ body.menu-active .menu-mobile a {
     display: none;
 }
 
-.hirenavbouton {
-    background: rgb(255, 255, 255);
-    color: rgb(87,11,180);
-    padding: 5px 25px;
-    font-size: 25px;
-    border-radius: 44px;
+.cv1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12.5px;
+    height: 50px;
+    width: calc(100vw - 50px);
+    max-width: 300px;
+    font-size: 1.2rem;
     position: relative;
-    right: 3px;
     touch-action: manipulation;
-    box-shadow:  -4px -3px -16px 0px rgba(255, 249, 249),3px 3px 6px 0px rgba(0, 0, 0, 0.253);
  
 }
 
-.hirenavbouton:active {
-    box-shadow: 3px 4px 5.3px 0px black, -4px -3px 16px 0px white;
-}
+
 
 .cv {
     display: none;
 }
 
-.cv1.active {
-    display: flex;
-    color: whitesmoke;
-    background: var(--main-color);
-    padding: 10px 5vw;
-    /* font-size: 15px; */
-    font-size: clamp(15px,4vw,20px);
-    font-weight: 300;
-    font-family: "Roboto";
-    gap: 5px;
-    border-radius: 40px;
-    box-shadow: 1px 1px 10px 0px rgba(0, 0, 0, 0.84), -1px -1px 10px 9px white;
-    align-items: center;
-    z-index: 5;
-    margin-top: 15px;
-}
 
-.cv1 {
-    display: none;
-}
+
+
+
 
 
 
@@ -867,18 +881,7 @@ body.menu-active .menu-mobile a {
 
     }
 
-    .hirenav {           
-        position: absolute;
-         color: black;
-         font-weight: 700;
-         font-size: clamp(18px,1.3vw,25px);
-         /* right: clamp(25px,10vw,200px);         */
-         right: clamp(25px,5vw,200px);
-         /* background: rgb(104, 148, 59);   */
-         width: 250px; 
-        text-align: right;
 
-}
 
      .lang {
         display: flex;
@@ -963,28 +966,17 @@ body.menu-active .menu-mobile a {
     
     font-size: clamp(15px,1vw,20px);
     padding: 10px 2vh;
-    border-radius: 40px;
 
-    background-color: var(--main-color);
-    color: whitesmoke;
-    display: flex;
-    align-items: center;
     gap: 10px;
-    box-shadow: 
+    /* box-shadow: 
     1px 1px 10px 1px rgba(0, 0, 0, 0.596),
-    -1px -1px 5px 9px rgb(255, 255, 255);
+    -1px -1px 5px 9px rgb(255, 255, 255); */
     
    }
 
-   .cv:hover {
-    background-color: var(--second-color);
-    color: var(--main-color);
-     box-shadow: 
-        1px 1px 10px 0px var(--main-color),
-        -1px -1px 10px 9px rgb(255, 255, 255);
-    transition: 0.5s  ease-in-out ;
-    cursor: pointer;
-   }
+
+
+ 
 
    .cv1  {
     display: none;
