@@ -503,12 +503,11 @@ body.menu-active .menu-mobile a {
         display: flex;
         flex-direction: column;
         gap: 30vh;
-        height: 90vh;
+        height: 100vh;
         width: 100vw;
         justify-content: flex-end;
         align-items: center;
-        /* background: #7b9e67; */
-        padding-bottom: 50px;
+    
     }
 
 
@@ -516,9 +515,9 @@ body.menu-active .menu-mobile a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 5px;
+    gap: 25px;
+    padding-bottom: 50px;
     /* background: red; */
-    margin-bottom: 20px;
 
 }
 
@@ -558,7 +557,7 @@ body.menu-active .menu-mobile a {
     align-items: center;
     justify-content: center;
     gap: 12.5px;
-    height: 50px;
+    height: 65px;
     width: calc(100vw - 50px);
     max-width: 300px;
     font-size: 1.2rem;
@@ -976,10 +975,11 @@ body.menu-active .menu-mobile a {
     display: flex;
     
     margin-top: 5vh;
-    
-    font-size: clamp(15px,1vw,20px);
+    height: 55px;
+    box-sizing: border-box;
+    font-size: clamp(18px,1vw,20px);
     padding: 10px 2vh;
-
+    width: 250px;
     gap: 10px;
     
     
@@ -1064,7 +1064,7 @@ body.menu-active .menu-mobile a {
     position: absolute;
     position: fixed;
     bottom: 0px;
-    /* background: #7a5a5a; */  
+    /* background: #7a5a5a;   */
     
     left: 50%;
     transform: translate(-50%);
