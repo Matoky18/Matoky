@@ -495,6 +495,7 @@ body.menu-active .menu-mobile a {
     /* background: #c02c2c; */
     align-items: top;
     width: 100%;
+    box-sizing: border-box;
    
 }
 
