@@ -862,6 +862,8 @@ body.menu-active .menu-mobile a {
         
     }
 
+    
+
 
     nav {
         /* margin-right: 30vw; */
@@ -881,6 +883,17 @@ body.menu-active .menu-mobile a {
 
     }
 
+
+    .hirenav {
+        /* background: hotpink; */
+        width: 250px;
+        text-align: right;
+        position: absolute;
+        font-size: clamp(15px,1vw,25px);
+        right: clamp(25px,5vw,250px);
+        font-weight: 600 ;
+
+    }
 
 
      .lang {
@@ -968,9 +981,7 @@ body.menu-active .menu-mobile a {
     padding: 10px 2vh;
 
     gap: 10px;
-    /* box-shadow: 
-    1px 1px 10px 1px rgba(0, 0, 0, 0.596),
-    -1px -1px 5px 9px rgb(255, 255, 255); */
+    
     
    }
 
