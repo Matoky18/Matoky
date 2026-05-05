@@ -491,7 +491,7 @@ body.menu-active .menu-mobile a {
     /* background: red; */
     display: flex;
     justify-content: center;
-    height: 100vh;
+    max-height: 100vh;
     background: #2ca2c0;
     align-items: top;
     width: 100%;
