@@ -1185,6 +1185,7 @@ body.menu-active .menu-mobile a {
         background: linear-gradient(180deg,#F3EFF9,#FFFFFF) ;
         min-height: 100vh;
        
+       
     }
 
    
@@ -1318,10 +1319,11 @@ body.menu-active .menu-mobile a {
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        height: 100vh;
+       
         gap: 50px;
         width: 100%;
-        padding-bottom: 25px;
+        padding-top: 50px;
+        padding-bottom: 50px;
         background: linear-gradient(white,#e8e0f3);
     }
 

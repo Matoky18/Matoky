@@ -66,7 +66,7 @@ function setLanguage () {
 
                 let parts = key.split(".")           
 
-               
+               alert("fetch ok" + res.status)
 
 
                 if (datakey.tagName === "INPUT" || datakey.tagName==="TEXTAREA" ) {
