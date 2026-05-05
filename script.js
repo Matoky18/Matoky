@@ -54,7 +54,7 @@ function setLanguage () {
             
             {
                 // console.log(res)
-               alert("fetch ok" + res.status)
+            //    alert("fetch ok" + res.status)
                 return res.json()
 
                 
