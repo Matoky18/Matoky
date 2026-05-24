@@ -211,10 +211,6 @@ h1 {
         width: 100%;
         height: 150px;
     }
-
-    .project > ul > li:nth-child(4) > .img {
-        background-image: url("./image/landingPlombier.png");
-    }
     .project > ul > li:nth-child(2) > .img {
         background-image: url("./image/elec.PNG");
     }
@@ -222,6 +218,13 @@ h1 {
         background-image: url("./image/boutique\ alphaFitness.PNG");
     }
 
+    .project > ul > li:nth-child(4) > .img {
+        background-image: url("./image/landingPlombier.png");
+    }
+    .project > ul > li:nth-child(5) > .img {
+        background-image: url("./image/barber.png");
+    }
+    
 /* projet mobile fin */
 
 
@@ -252,6 +255,8 @@ h1 {
     font-size: 4rem;
     color: #570BB4;
     font-weight: normal;
+    text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.39);
+
 }
 .skill > .hero-skill > .icon > .gsap > img {
     width: 100px;
@@ -266,6 +271,8 @@ h1 {
     color: #570BB4;
     font-weight: normal;
     font-family: "Cookie" ,serif;
+    text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.39);
+
 }
 
 .phrasetitre  > p {
@@ -1278,7 +1285,7 @@ body.menu-active .menu-mobile a {
         font-size: 0.8rem;
     }
 
-    .project > ul > li > .stacks > svg {
+    .project > ul > li > .stacks > svg , img {
         width: 25px;
     }
 
@@ -1325,8 +1332,7 @@ body.menu-active .menu-mobile a {
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: center;
-       
+        justify-content: center;       
         gap: 50px;
         width: 100%;
         padding-top: 50px;
@@ -1338,6 +1344,8 @@ body.menu-active .menu-mobile a {
         font-size: 4rem;
         /* margin-bottom: -10px; */
         padding-block: 12.5px;
+        text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.39);
+
     }
   
    .phrasetitre {
@@ -1355,8 +1363,7 @@ body.menu-active .menu-mobile a {
    .ch1, .message {
     
     background: rgb(253,246,252);
-    border-radius: 5px;
-    
+    border-radius: 5px;    
     width: 100%;
     box-sizing: border-box;
     border: 0px;
