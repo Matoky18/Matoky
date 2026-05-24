@@ -662,7 +662,7 @@ body.menu-active .menu-mobile a {
 
 
 
-    .icon > div:hover > svg  {
+    .icon > div:hover > svg , .icon > div:hover > img  {
         cursor: pointer;
         transform: scale(0.8);
         overflow: visible;
@@ -1149,7 +1149,7 @@ body.menu-active .menu-mobile a {
         transition: all ease 0.5s;
     }
 
-    .icon > div:hover svg  {
+    .icon > div:hover > svg , .icon > div:hover > img {
         cursor: pointer;
         transform: scale(0.8);
         overflow: visible;
