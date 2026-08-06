@@ -193,6 +193,9 @@ h1 {
     .project > ul > li > .stacks > svg {
         width: 25px;
     }
+    .project > ul > li > .stacks > img {
+        width: 25px;
+    }
 
     .project > ul > li > a > svg {
         width: 25px;
